@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>shopcart</title>
+  <style>
+  *{ 
+    margin:0%;
+    padding:0%;
+    font-family:'Gill Sans';
+  }
+  html,body{
+    height:100%;
+    width:100;
+  }
+
+  #header{
+    background-color:white;
+    height:10%;
+    width:100%;
+    display:flex;
+    position:fixed;
+    cursor: pointer;
+  }
+   .icon{
+    margin:10px;
+   }
+   .text:hover{
+    color: rgb(0, 0, 155);
+   }
+  .text{
+    color:darkblack;
+    height:5%;
+    margin: 20px;
+    align-items: center;
+    justify-items: center;
+    font-weight:bolder;
+    font-size:x-large;  
+  }
+  #fakeheader{
+    background-color:white;
+    height:10%;
+    width:100%;
+  }
+  #page1, #page3{
+    background-color:rgb(191, 191, 199);
+    width:100%;
+    height:100%;
+  }
+  #strip{
+    background-color: rgb(0, 0, 134);
+    font-size: x-large;
+    text-align: center;
+    color: white;
+    width:100%;
+    height:5%;
+  }
+  .box{
+    height: 40%;
+    width: 100%;
+    background-color: rgb(191, 191, 199);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+  }
+  .image{
+    height:100% ;
+    width: 16%;
+    background-color: rgb(148, 192, 230);s
+    margin-right: 3.5% ;
+    margin-left : 3.5%;
+    text-align : center;
+    cursor : pointer;
+  }
+  .strip2{
+    height: 25%;
+    width: 100%;
+    font-size: x-large;
+    font-style: bolder;
+    font-style: italic; 
+  }
+  .image:hover{
+    color: rgb(176, 62, 93);
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(244, 244, 244);
+}
+
+.support-container {
+    max-width: 100%;
+    height: 90%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.support-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.support-box {
+    flex: 1 1 30%;
+    margin: 10px;
+    background-color: rgba(243, 239, 239, 0.825);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.support-box h3 {
+    color: rgb(0, 0, 0);
+}
+
+.support-box p {
+    color: rgba(0, 0, 0, 0.641);
+}
+
+.support-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(5, 123, 249);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.support-box a:hover {
+    background-color: rgb(0, 86, 179);
+}
+
+.contact-form {
+    margin-top: 30px;
+    background-color: rgb(249, 249, 249);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: rgb(40, 167, 69);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgb(32, 136, 56);
+}
+#name{
+  height: 10%;
+  width: 100%;
+  text-align: right;
+  background-color: white;
+}
+  </style>
+</head>
+<body>
+  
+  <div id="header">
+    
+    <div id="logo" style="margin: 8px;"><img  height="65px" width="65px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOYo0sFIC899TtKVeUXKCJaJ-AAuooFPxKGg&s"></div>
+    
+    <div class="text"><p>Products</p></div>
+    <div class="text"><p>Categories</p></div>
+    <div class="text">My-Account</div>
+    <div class="text">Orders</div>
+    <div class="text">My Cart</div>
+    <div class="text"><p>Products on Discount</p></div>
+    <div class="text">Support</div>
+    
+    
+      
+    
+    <div class="icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaoxGC5hzzWChBA8TucVJ74w30jJKJKNR8qhGElwlytrMf688fGxD9ZU8&s=10" width="60" height="60"></div>
+    <div class="icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-iHfPlwUW7bPnzlcn2AcHyKEWbRdff8Qwxg&usqp=CAU" height="60"width="60"></div>
+    <div class="icon"><img src="https://thumbs.dreamstime.com/b/seller-icon-trendy-logo-concept-white-background-e-commerce-payment-collection-suitable-use-web-apps-mobile-print-131189854.jpg" height="60"width="60"></div>
+    <div class="icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8huDwWG7eqstb66FgjJE25xXqMKoBBNaqfQ&usqp=CAU" height="60"width="60"></div>
+  </div>
+  <div id ="fakeheader">
+  </div>
+  <div id="page1" >
+    <div id="strip">
+      <h>Upcoming sale on 10feb! upto 50% off on all appliances</h>
+    </div>
+<div class="box">
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZ_YW7UlMMdF-EWtRcc2yFFaroF0jM1IPGg&usqp=CAU" height="74%"width="90%">
+    <div class="strip2"><p>Samsung Galaxy S25 <br> ₹140000</p></div></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC3lMdX083KevCNfg2ZQlZqwLEzTRTHma9Hg&s" height="74%"width="90%">
+    <div class="strip2"><p>Bose Headphone Z290 <br> ₹30000</p></div></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8IQa3hxbj90dIacph0XaTPlUGNjXbOBEPuVDt8Sz4JSYoV7-uX5eie0mV&s=10" height="74%"width="90%">
+    <div class="strip2"><p>MSI Gaming Laptop <br> ₹120000</p></div></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsnyVrWJKPPDFDEzMHtPw2-nqX8RPnW3U1T47efKIj6QnYAqXgJtLJ_M3N&s=10" height="74%"width="90%">
+    <div class="strip2"><p>Samsung Band 4 <br> ₹10000</p></div></div>
+  <div class="image"><img src="https://m.media-amazon.com/images/I/61IujYL0JTL.jpg" height="74%"width="90%">
+    <div class="strip2"><p>Casio fx-991ES <br> ₹3000 </p></div></div>
+</div>
+<div class="box">
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZLOlZlf2B3yQHIKqh3ZBXgq01T1K4UPA8g&usqp=CAU" height="74%"width="90%">
+    <div class="strip2"><p>Logitecg G560 <br> ₹14000</p></div></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2D82b42ql5hLB_K-CRzXh2OFCnxMa1uhCAQ&usqp=CAU" height="74%"width="90%">
+    <div class="strip2"><p>Soundcore Bi Anker<br>₹2400 </p></div></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4SriFpLNRSEUDh4AFsF2PsyZLiZiw2zej4g&s" height="74%"width="90%">
+    <div class="strip2"><p>Infinix Note 15 5G<br> ₹22000</p></div></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvkRjkY76_7ezrPqoFoe0XdJ49KWV8F5kOTg&s" height="74%"width="90%">
+    <div class="strip2"><p>Symphony 55L Cooler <br> ₹11000</p></div></div>
+  <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlDCYHr8iV-sHECUkkgmqra312BGDpFna5EiYIbu0lgRDckusurAisNU6q&s=10" height="74%"width="90%">
+    <div class="strip2"><p>Bravia 2 55 inch <br> ₹45000</p></div></div>
+</div>
+  </div>
+<div id="page3">
+<div class="support-container">
+    <h2>Support Section</h2>
+    <div class="support-content">
+        <div class="support-box">
+            <h3>FAQs</h3>
+            <p>Find answers to common questions.</p>
+            <a href="#">View FAQs</a>
+        </div>      
+        <div class="support-box">
+            <h3>Live Chat</h3>
+            <p>Chat with our support team in real-time.</p>
+            <a href="#">Start Live Chat</a>
+        </div>
+
+        <div class="support-box">
+            <h3>Email Support</h3>
+            <p>Send us an email and we'll get back to you.</p>
+            <a href="mailto:Amarnath1232@gmail.com">Email Us</a>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h3>Contact Us</h3>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div> <div id="name"><b>Created by</b>
+  <li><i>Amarnath Pandey(IIT2024196)</i></li>
+  <li><i>Aditya kumar(IIT2024108) </i></li>
+</div>
+</div>
+</body>
+</html>
